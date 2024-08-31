@@ -1,7 +1,7 @@
 "use client";
 import { Window, WindowHeader, WindowContent, Button } from "react95";
 import React from "react";
-import React95Wrapper from "@/components/react95Wrapper";
+import React95Wrapper from "@/components/React95Wrapper";
 
 export default function Home() {
   return (
