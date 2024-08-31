@@ -1,6 +1,23 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
+
+const ms_sans_serif = localFont({
+  src: [
+    {
+      path: "../fonts/ms_sans_serif.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/ms_sans_serif_bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-ms-sans-serif",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={ms_sans_serif.variable}>{children}</body>
     </html>
   );
 }
