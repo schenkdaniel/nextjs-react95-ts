@@ -7,9 +7,9 @@ import original from "react95/dist/themes/original";
 
 const GlobalStyles = createGlobalStyle`
   ${styleReset}
-  body, input, select, textarea {
-    font-family: 'ms_sans_serif', sans-serif;
-  }
+  body, input, select, textarea, Button, button {
+  font-family: var(--font-ms-sans-serif), 'ms_sans_serif', sans-serif;
+}
 `;
 
 interface React95WrapperProps {
